@@ -1,0 +1,252 @@
+/* line 1, ../sass/author.sass */
+html, body {
+  font-family: sans-serif;
+  background-color: #eee;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* line 12, ../sass/author.sass */
+* {
+  box-sizing: border-box;
+}
+
+/* line 15, ../sass/author.sass */
+.content {
+  padding-bottom: 20px;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+/* line 22, ../sass/author.sass */
+.content > .inner {
+  padding: 10px;
+}
+
+/* line 26, ../sass/author.sass */
+.inner {
+  width: 100%;
+}
+
+/* line 29, ../sass/author.sass */
+.inner {
+  width: 940px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 34, ../sass/author.sass */
+input {
+  font-size: 16px;
+}
+
+/* line 37, ../sass/author.sass */
+input, select {
+  vertical-align: middle;
+}
+
+/* line 40, ../sass/author.sass */
+input {
+  -webkit-appearance: textfield;
+  background-color: white;
+  -webkit-rtl-ordering: logical;
+  user-select: text;
+  cursor: auto;
+  padding: 1px;
+  border-width: 2px;
+  border-style: inset;
+  border-color: initial;
+  border-image: initial;
+}
+
+/* line 52, ../sass/author.sass */
+input, textarea, keygen, select, button {
+  text-rendering: auto;
+  color: initial;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  margin: 0em 0em 0em 0em;
+  font: 11px system-ui;
+}
+
+/* line 65, ../sass/author.sass */
+input, textarea, keygen, select, button, meter, progress {
+  -webkit-writing-mode: horizontal-tb;
+}
+
+/* line 68, ../sass/author.sass */
+.field-address input {
+  width: 380px;
+}
+
+/* line 72, ../sass/author.sass */
+.input-s {
+  width: 100%;
+}
+
+/* line 76, ../sass/author.sass */
+.input-txt {
+  margin-bottom: 5px;
+}
+
+/* line 79, ../sass/author.sass */
+.input-s {
+  width: 220px;
+}
+
+/* line 82, ../sass/author.sass */
+.input-txt {
+  display: inline-block;
+  background: none;
+  border: 1px solid #f19100;
+  text-indent: 10px;
+  height: 35px;
+  border-radius: 17.5px;
+  outline: none;
+  font-size: 13px;
+  color: #333;
+  vertical-align: middle;
+  transition: all 300ms ease-out;
+  z-index: 1;
+}
+
+/* line 100, ../sass/author.sass */
+.content > .inner {
+  padding: 10px;
+}
+
+/* line 104, ../sass/author.sass */
+.inner {
+  width: 100%;
+}
+
+/* line 107, ../sass/author.sass */
+.inner {
+  width: 940px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 112, ../sass/author.sass */
+main.wrap {
+  margin-top: 100px;
+}
+
+/* line 116, ../sass/author.sass */
+.notice.notice-light {
+  background-color: rgba(241, 145, 0, 0.16);
+  color: rgba(0, 0, 0, 0.4);
+}
+
+/* line 120, ../sass/author.sass */
+.notice {
+  background-color: rgba(241, 145, 0, 0.83);
+  border: 1px solid #f19100;
+  color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 20px auto;
+  font-size: 14px;
+  line-height: 1.5;
+  display: inline-block;
+}
+
+/* line 133, ../sass/author.sass */
+.form-list .label span {
+  width: auto;
+  padding-bottom: 10px;
+}
+
+/* line 137, ../sass/author.sass */
+.form-list .label span {
+  width: 90px;
+  padding-top: 10px;
+  display: inline-block;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.4);
+  white-space: nowrap;
+}
+
+/* line 146, ../sass/author.sass */
+.form-list .value-notic {
+  text-align: left;
+}
+
+/* line 149, ../sass/author.sass */
+.form-list .value-notic {
+  display: block;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.4);
+  margin-top: 10px;
+  line-height: 1.5em;
+}
+
+/* line 157, ../sass/author.sass */
+.form-list .value-info {
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+/* line 161, ../sass/author.sass */
+.form-list .value-info {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.4);
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+
+/* line 168, ../sass/author.sass */
+.form-list .field-set {
+  margin-bottom: 20px;
+}
+
+/* line 171, ../sass/author.sass */
+.cell-group {
+  display: table;
+  width: 100%;
+}
+
+/* line 176, ../sass/author.sass */
+.u-cell-align-top [class^="cell"] {
+  vertical-align: top;
+}
+
+/* line 179, ../sass/author.sass */
+.cell-inner {
+  box-sizing: border-box;
+}
+
+/* line 184, ../sass/author.sass */
+.form-list .value {
+  display: block;
+}
+
+/* line 190, ../sass/author.sass */
+.select-wrap select {
+  width: 100%;
+}
+
+/* line 193, ../sass/author.sass */
+.select-wrap select {
+  -webkit-appearance: none;
+  background: none;
+  border: 1px solid #f19100;
+  line-height: 35px;
+  height: 35px;
+  min-width: 130px;
+  border-radius: 17.5px;
+  text-indent: 20px;
+  outline: none;
+}

@@ -1,0 +1,124 @@
+//顏色定義*
+$color_blue: #7A93AC
+$color_blue1: #10345F
+$color_yellow: #F8CC46
+$color_white: #ececec
+$color_red: #EE706B
+$color_green: #58B9B4
+$color_text: #595A5A
+
+@mixin bb
+    background-color: white
+    position: absolute
+    width: 1150px
+    height: 1400px
+    display: block
+    left: 50%
+    transform: translateX(-50%)
+    opacity: 0.6
+    z-index: -1
+
+@mixin center
+    left: 50%
+    transform: translateX(-50%)
+    text-align: center
+    position: relative
+
+@mixin caption
+    text-align: center
+    color: $color_blue1
+    font-size: 40px
+    font-weight: bold
+
+@mixin hr
+    border: solid 0.2px $color_red
+    width: 650px
+    opacity: 0.4
+    text-align: center
+
+
+// -----------------------------------------
+
+html, body
+    overflow-x: hidden
+    font-size: 16px
+    height: 1000px
+    background-color: $color_white
+    position: relative
+    z-index: -2
+
+p,h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
+    font-weight: bold
+
+// -----------------------------------------
+
+nav.navbar
+    transition: 0.5s
+
+nav.navbar-top
+    background-color: $color_green
+    opacity: 0.6
+
+nav.navbar.navbar-default.navbar-fixed-top.navbar-top a
+    color: $color_text
+    transition: 0.5s
+    &:hover
+        color: #ff6e3a
+
+// -----------------------------------------
+
+.white_back
+    +bb
+
+
+section#part1
+.caption1
+    +caption
+    padding-top: 100px
+
+.intro1
+    color: $color_text
+    font-size: 18px
+    margin-top: 20px
+    padding: 0px 160px
+
+.hr1
+    +hr
+    padding: 0px -100px
+
+// -----------------------------------------
+section#part2
+.caption2
+    +caption
+    margin-top: 20px
+
+.intro2
+    color: $color_text
+    font-size: 18px
+    margin-top: 20px
+    padding: 0px 160px
+
+.hr2
+    +hr
+    margin-top: 40px
+
+// -----------------------------------------
+section#part3
+.caption3
+    +caption
+    margin-top: 20px
+
+.people
+    width: 40%
+    margin-top: 50px
+    +center
+
+.hr3
+    +hr
+    margin-top: 100px
+
+// -----------------------------------------
+footer#part4
+    background-color: $color_yellow
+    padding: 80px 0px
+    margin-top: 30px

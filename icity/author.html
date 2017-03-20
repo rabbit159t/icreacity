@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>積非城市-作者頁面</title>
+    <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+    <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="stylesheets/author.css"/>
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-top">
+      <div class="container">
+        <div class="navbar-header"><a class="navbar-brand">積非城市</a></div>
+        <div class="navbar-collapse collapse">
+          <div class="nav navbar-nav navbar-right">
+            <li><a href="#section_ask">專案搜尋 INTRO</a></li>
+            <li><a href="#section_about">簡介 ABOUT</a></li>
+            <li><a href="#section_story">作者故事 STORY</a></li>
+            <li><a href="#section_future">未來 FUTURE</a></li>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </body>
+  <main class="wrap">
+    <div class="content">
+      <div class="inner">
+        <form id="form1" method="post" enctype="multipart/form-data" name="form1">
+          <input id="username" type="hidden" name="username" value="encorew56527@yahoo.com.tw" class="has-value"/>
+          <div class="notice notice-light">
+            <div class="cell-group-fixed u-cell-align-middle">
+              <div class="cell">
+                <p>親愛的發起人，即將開始構想專案了嗎?請先填寫您的基本資料，讓我們可以聯絡您。以下資料皆為「必填」，PressPlay 僅用於提案者身份驗證等相關用途，不會向專案瀏覽者公開，請您放心。</p>
+              </div>
+            </div>
+          </div>
+          <ul class="form-list setting-content-form">
+            <li class="field-set cell-group u-cell-align-top">
+              <div class="label cell"><span class="cell-inner">真實姓名</span></div>
+              <div class="value cell cell-fluid">
+                <input id="realname" type="text" name="realname" value="" class="input-txt input-s required"/>
+              </div>
+            </li>
+            <li class="field-set cell-group u-cell-align-top">
+              <div class="label cell"><span class="cell-inner">身分證號碼</span></div>
+              <div class="value cell cell-fluid">
+                <input id="identity" type="text" name="identity" value="" class="input-txt input-s required"/><span class="value-info">(公司或法人請填統一編號) </span>
+              </div>
+            </li>
+            <li class="field-set cell-group u-cell-align-top field-address">
+              <div class="label cell"><span class="cell-inner">聯絡地址</span></div>
+              <div class="value cell cell-fluid">
+                <div class="cell-group">
+                  <div class="cell select-wrap">
+                    <select id="city" name="city" onchange="GetCityarea(this);" class="required">
+                      <option value="">請選擇縣市</option>
+                      <option value="OVERSEA">海外</option>
+                      <option value="A">基隆市</option>
+                      <option value="B">臺北市</option>
+                      <option value="C">新北市</option>
+                      <option value="D">桃園市</option>
+                      <option value="E">新竹市</option>
+                      <option value="F">新竹縣</option>
+                      <option value="G">苗栗縣</option>
+                      <option value="H">臺中市</option>
+                      <option value="I">彰化縣</option>
+                      <option value="J">南投縣</option>
+                      <option value="K">雲林縣</option>
+                      <option value="L">嘉義市</option>
+                      <option value="M">嘉義縣</option>
+                      <option value="N">臺南市</option>
+                      <option value="O">高雄市</option>
+                      <option value="P">屏東縣</option>
+                      <option value="Q">臺東縣</option>
+                      <option value="R">花蓮縣</option>
+                      <option value="S">宜蘭縣</option>
+                      <option value="T">澎湖縣</option>
+                      <option value="U">金門縣</option>
+                      <option value="V">連江縣</option>
+                    </select><i class="icon-chevron-down"></i>
+                  </div>
+                  <div class="cell select-wrap oversea_hide">
+                    <select id="cityarea" name="cityarea" class="required">
+                      <option value="">請選擇鄉鎮市區</option>
+                    </select><i class="icon-chevron-down"></i>
+                  </div>
+                  <div class="cell-fluid">
+                    <input id="address" type="address" name="address" value="" class="input-txt required"/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="field-set cell-group u-cell-align-top oversea_hide">
+              <div class="label cell"><span class="cell-inner">郵遞區號</span></div>
+              <div class="value cell cell-fluid">
+                <input id="zipcode" type="text" name="zipcode" value="" class="input-txt input-s"/>
+              </div>
+            </li>
+            <li class="field-set cell-group u-cell-align-top">
+              <div class="label cell"><span class="cell-inner">聯絡信箱</span></div>
+              <div class="value cell cell-fluid">
+                <input id="email" type="email" name="email" value="encorew56527@yahoo.com.tw" class="input-txt input-s email required has-value"/><span class="value-info">勿包含特殊符號：『+』</span><span class="value-notic">為您的PressPlay系統登入帳號，我們也會以此E-mail聯繫您!</span>
+              </div>
+            </li>
+            <li class="field-set cell-group u-cell-align-top">
+              <div class="label cell"><span class="cell-inner">重設密碼</span></div>
+              <div class="value cell cell-fluid">
+                <input id="newpassword" type="password" name="newpassword" maxlength="20" class="input-txt input-s ignore alnum required"/><a onclick="UpdatePassword();" class="btn btn-dark">確認重設密碼</a>
+              </div>
+            </li>
+            <li class="field-set cell-group u-cell-align-top">
+              <div class="label cell"><span class="cell-inner">聯絡電話</span></div>
+              <div class="value cell cell-fluid">
+                <input id="tel" type="text" name="tel" value="" class="input-txt input-s required"/>
+              </div>
+            </li>
+            <li class="field-set cell-group u-cell-align-top">
+              <div class="label cell"><span class="cell-inner">自我介紹</span></div>
+              <div class="value cell cell-fluid">
+                <textarea id="desc" name="desc" class="input-txt input-b"></textarea><span class="value-notic">文字限定在120字內，請酌量使用</span>
+              </div>
+            </li>
+          </ul>
+          <div class="form-footer">
+            <label class="input-check-wrap">
+              <input id="check_agree" type="checkbox" class="input-check has-value"/><span>已詳閱 服務條款與隱私政策</span>
+            </label>
+            <button type="button" onclick="SaveData();" class="btn btn-primary">下一步 </button><a href="support/service" target="_blank" style="font-size: 9px;opacity: 0.5;"><前往閱讀></a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+</html>

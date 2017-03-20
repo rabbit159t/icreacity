@@ -1,0 +1,77 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        title 積非城市-首頁
+        link(rel='stylesheet prefetch', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css')
+        link(rel='stylesheet prefetch', href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css')
+        link(rel='stylesheet', type='text/css', href='stylesheets/home.css')
+    body
+        nav.navbar.navbar-default.navbar-fixed-top.navbar-top
+            .container
+                .navbar-header
+                    a.navbar-brand 積非城市
+                .navbar-collapse.collapse
+                    .nav.navbar-nav.navbar-right
+                        li
+                            a(href='#section_ask') 專案搜尋 INTRO
+                        li
+                            a(href='#section_about') 簡介 ABOUT
+                        li
+                            a(href='#section_story') 作者故事 STORY
+                        li
+                            a(href='#section_future') 未來 FUTURE
+        // ---------------------------
+        .white_back
+        
+        header.jumbotron
+            .container
+                h1(data-0='transform: translateY(-50px)', data-500='transform: translateY(100px)') 點亮故事的內容訂閱平台
+                hr
+                h4
+                    | 好的故事跟作品不只會發光
+                    br
+                    br
+                    | 更能創造長期的收益跟價值
+
+
+        section#section_about
+            .contanier
+                .row
+                    .col-sm-12
+                        h1 本週精選專案列表
+                    .col-md-4.col-sm-6(data-bottom-top='transform: translateY(-30px);opacity: 0', data-center='transform: translateY(0px);opacity: 1')
+                        .img_wrap
+                            img(src='http://i.imgur.com/LCukZ1j.png', alt='')
+                        h3 施淳耀
+                        hr.hr1
+                        p 堅持夢想的獨立音樂人
+                    .col-md-4.col-sm-6(data-bottom-top='transform: translateY(-30px);opacity: 0', data-center='transform: translateY(0px);opacity: 1')
+                        .img_wrap
+                            img(src='http://i.imgur.com/OsCac2m.png', alt='')
+                        h3 沈信甫
+                        hr.hr1
+                        p 堅持夢想的獨立音樂人
+                    .col-md-4.col-sm-6.m2(data-bottom-top='transform: translateY(-30px);opacity: 0', data-center='transform: translateY(0px);opacity: 1')
+                        .img_wrap
+                            img(src='http://i.imgur.com/68XWx5f.png', alt='')
+                        h3 王啟恆
+                        hr.hr1
+                        p 堅持夢想的獨立音樂人
+                    .col-sm-12
+                        p.block1 更多作者
+                    .col-sm-12
+                        hr.hr2
+
+
+        footer.jumbotron
+            .container
+                h2 想了解更多創作相關的故事嗎?
+                input.form-control(placeholder='Email')
+                hr
+                button.btn.btn-default 訂閱故事
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js')
+        script(src='js/often.js')

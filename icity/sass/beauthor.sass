@@ -1,0 +1,61 @@
+//顏色定義*
+$color_blue: #7A93AC
+$color_blue1: #10345F
+$color_yellow: #F8CC46
+$color_white: #ececec
+$color_red: #EE706B
+$color_green: #58B9B4
+
+
+html, body
+    overflow-x: hidden
+    font-size: 16px
+    height: 1000px
+    background-color: $color_white
+    position: relative
+    z-index: -2
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
+    font-weight: bold
+
+header.jumbotron
+    text-align: center
+    background-image: url("http://i.imgur.com/eSM8BLc.jpg")
+    background-size: cover
+    background-attachment: fixed
+    margin-bottom: 0px
+
+header.jumbotron .container
+    color: $color_red
+    padding: 130px 0px
+
+// header.jumbotron hr
+//     max-width: 50px
+//     border: solid 2px $color_red
+
+header.jumbotron h4
+    color: rgba(255, 255, 255, 0.5)
+    font-weight: normal
+    margin-top: 30px
+    margin-bottom: -40px
+
+.divider
+    color: #5d5d5d
+    width: 70%
+    margin: 20px auto
+    overflow: hidden
+    text-align: center
+    line-height: 1.2em
+    margin-top: 70px
+
+.divider:before, .divider:after
+    content: ""
+    vertical-align: top
+    display: inline-block
+    width: 50%
+    height: 0.65em
+    border-bottom: 3px solid #adadad
+    margin: 0 2% 0 -55%
+
+.divider:after
+    margin: 0 -55% 0 2%

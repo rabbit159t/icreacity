@@ -1,0 +1,29 @@
+/* line 9, ../sass/login.sass */
+html, body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  font-size: 16px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+/* line 18, ../sass/login.sass */
+.bg {
+  background-image: url("http://i.imgur.com/4LJ1l99.jpg");
+  height: 820px;
+}
+
+/* line 22, ../sass/login.sass */
+.bg-blur {
+  float: left;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(5px);
+}

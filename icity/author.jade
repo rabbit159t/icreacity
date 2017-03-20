@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title 積非城市-作者頁面
+
+        link(rel='stylesheet prefetch', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css')
+        link(rel='stylesheet prefetch', href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css')
+        link(rel='stylesheet', type='text/css', href='stylesheets/author.css')
+
+    body
+        nav.navbar.navbar-default.navbar-fixed-top.navbar-top
+            .container
+                .navbar-header
+                    a.navbar-brand 積非城市
+                .navbar-collapse.collapse
+                    .nav.navbar-nav.navbar-right
+                        li
+                            a(href='#section_ask') 專案搜尋 INTRO
+                        li
+                            a(href='#section_about') 簡介 ABOUT
+                        li
+                            a(href='#section_story') 作者故事 STORY
+                        li
+                            a(href='#section_future') 未來 FUTURE
+     main.wrap
+        .content
+            .inner
+                form#form1(method='post', enctype='multipart/form-data', name='form1')
+                    input#username.has-value(type='hidden', name='username', value='encorew56527@yahoo.com.tw')
+                    .notice.notice-light
+                        .cell-group-fixed.u-cell-align-middle
+                            .cell
+                                p
+                                    | 親愛的發起人，即將開始構想專案了嗎?請先填寫您的基本資料，讓我們可以聯絡您。以下資料皆為「必填」，PressPlay 僅用於提案者身份驗證等相關用途，不會向專案瀏覽者公開，請您放心。
+                    ul.form-list.setting-content-form
+                        li.field-set.cell-group.u-cell-align-top
+                            .label.cell
+                                span.cell-inner 真實姓名
+                            .value.cell.cell-fluid
+                                input#realname.input-txt.input-s.required(type='text', name='realname', value='')
+                        li.field-set.cell-group.u-cell-align-top
+                            .label.cell
+                                span.cell-inner 身分證號碼
+                            .value.cell.cell-fluid
+                                input#identity.input-txt.input-s.required(type='text', name='identity', value='')
+                                span.value-info (公司或法人請填統一編號) 
+                        li.field-set.cell-group.u-cell-align-top.field-address
+                            .label.cell
+                                span.cell-inner 聯絡地址
+                            .value.cell.cell-fluid
+                                .cell-group
+                                    .cell.select-wrap
+                                        select#city.required(name='city', onchange='GetCityarea(this);')
+                                            option(value='') 請選擇縣市
+                                            option(value='OVERSEA') 海外
+                                            option(value='A') 基隆市
+                                            option(value='B') 臺北市
+                                            option(value='C') 新北市
+                                            option(value='D') 桃園市
+                                            option(value='E') 新竹市
+                                            option(value='F') 新竹縣
+                                            option(value='G') 苗栗縣
+                                            option(value='H') 臺中市
+                                            option(value='I') 彰化縣
+                                            option(value='J') 南投縣
+                                            option(value='K') 雲林縣
+                                            option(value='L') 嘉義市
+                                            option(value='M') 嘉義縣
+                                            option(value='N') 臺南市
+                                            option(value='O') 高雄市
+                                            option(value='P') 屏東縣
+                                            option(value='Q') 臺東縣
+                                            option(value='R') 花蓮縣
+                                            option(value='S') 宜蘭縣
+                                            option(value='T') 澎湖縣
+                                            option(value='U') 金門縣
+                                            option(value='V') 連江縣
+                                        i.icon-chevron-down
+                                    .cell.select-wrap.oversea_hide
+                                        select#cityarea.required(name='cityarea')
+                                            option(value='') 請選擇鄉鎮市區
+                                        i.icon-chevron-down
+                                    .cell-fluid
+                                        input#address.input-txt.required(type='address', name='address', value='')
+                        li.field-set.cell-group.u-cell-align-top.oversea_hide
+                            .label.cell
+                                span.cell-inner 郵遞區號
+                            .value.cell.cell-fluid
+                                input#zipcode.input-txt.input-s(type='text', name='zipcode', value='')
+                        li.field-set.cell-group.u-cell-align-top
+                            .label.cell
+                                span.cell-inner 聯絡信箱
+                            .value.cell.cell-fluid
+                                input#email.input-txt.input-s.email.required.has-value(type='email', name='email', value='encorew56527@yahoo.com.tw')
+                                span.value-info 勿包含特殊符號：『+』
+                                span.value-notic 為您的PressPlay系統登入帳號，我們也會以此E-mail聯繫您!
+                        li.field-set.cell-group.u-cell-align-top
+                            .label.cell
+                                span.cell-inner 重設密碼
+                            .value.cell.cell-fluid
+                                input#newpassword.input-txt.input-s.ignore.alnum.required(type='password', name='newpassword', maxlength='20')
+                                a.btn.btn-dark(onclick='UpdatePassword();') 確認重設密碼
+                        li.field-set.cell-group.u-cell-align-top
+                            .label.cell
+                                span.cell-inner 聯絡電話
+                            .value.cell.cell-fluid
+                                input#tel.input-txt.input-s.required(type='text', name='tel', value='')
+                        li.field-set.cell-group.u-cell-align-top
+                            .label.cell
+                                span.cell-inner 自我介紹
+                            .value.cell.cell-fluid
+                                textarea#desc.input-txt.input-b(name='desc')
+                                span.value-notic 文字限定在120字內，請酌量使用
+                    .form-footer
+                        label.input-check-wrap
+                            input#check_agree.input-check.has-value(type='checkbox')
+                            span 已詳閱 服務條款與隱私政策
+                        button.btn.btn-primary(type='button', onclick='SaveData();') 下一步 
+                        a(href='support/service', target='_blank', style='font-size: 9px;opacity: 0.5;') <前往閱讀>
+
+    //- header.jumbotron
+    //- 
+    //- 
+    //- section#intro
+    //- 
+    //- 
+    //- section#now
+    //- 
+    //- 
+    //- section#service
+    //- 
+    //- 
+    //- 
+    //- footer.jumbotron

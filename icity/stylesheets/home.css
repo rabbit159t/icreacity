@@ -1,0 +1,177 @@
+/* line 37, ../sass/home.sass */
+html, body {
+  overflow-x: hidden;
+  font-size: 16px;
+  height: 1000px;
+  background-color: #ececec;
+  position: relative;
+  z-index: -2;
+}
+
+/* line 45, ../sass/home.sass */
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: bold;
+}
+
+/* line 48, ../sass/home.sass */
+.white_back {
+  background-color: red;
+  position: absolute;
+  width: 1200px;
+  height: 1500px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  opacity: 0.3;
+}
+
+/* line 60, ../sass/home.sass */
+nav.navbar {
+  transition: 0.5s;
+}
+
+/* line 63, ../sass/home.sass */
+nav.navbar-top {
+  background-color: transparent;
+}
+
+/* line 66, ../sass/home.sass */
+nav.navbar-top a {
+  color: white;
+  transition: 0.5s;
+}
+
+/* line 70, ../sass/home.sass */
+nav.navbar-top a:hover {
+  color: #ff6e3a;
+}
+
+/* line 75, ../sass/home.sass */
+header.jumbotron {
+  text-align: center;
+  background-image: url("http://i.imgur.com/RXTPeoi.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 0px;
+}
+
+/* line 82, ../sass/home.sass */
+header.jumbotron .container {
+  color: white;
+  padding: 130px 0px;
+}
+
+/* line 86, ../sass/home.sass */
+header.jumbotron hr {
+  max-width: 50px;
+  border: solid 2px #EE706B;
+}
+
+/* line 90, ../sass/home.sass */
+header.jumbotron h4 {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: normal;
+}
+
+/* line 95, ../sass/home.sass */
+section.col-md-4.col-sm-6 {
+  padding: 0px 0px;
+}
+
+/* line 98, ../sass/home.sass */
+section#section_about h1 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+/* line 103, ../sass/home.sass */
+section#section_about img {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 107, ../sass/home.sass */
+section#section_about .img_wrap {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 100%;
+  margin-top: 30px;
+}
+
+/* line 115, ../sass/home.sass */
+section#section_about h3, p {
+  text-align: center;
+}
+
+/* line 118, ../sass/home.sass */
+section#section_about .hr1 {
+  border: solid 1px #F8CC46;
+  margin: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+  width: 100px;
+}
+
+/* line 121, ../sass/home.sass */
+section#section_about .block1 {
+  border: solid 1px #7A93AC;
+  margin-top: 50px;
+  padding: 5px 10px;
+  display: inline-block;
+  border-radius: 5px;
+  color: #7A93AC;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+  margin-top: 60px;
+}
+
+/* line 125, ../sass/home.sass */
+section#section_about .hr2 {
+  border: solid 0.3px #7A93AC;
+  width: 900px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+/* line 133, ../sass/home.sass */
+footer.jumbotron {
+  text-align: center;
+  background-image: url("http://i.imgur.com/zYQ5GYG.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 0px;
+}
+
+/* line 140, ../sass/home.sass */
+footer.jumbotron input {
+  background-color: transparent;
+  max-width: 350px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 147, ../sass/home.sass */
+footer.jumbotron .container {
+  color: white;
+  padding: 40px 0px;
+}
+
+/* line 151, ../sass/home.sass */
+footer.jumbotron hr {
+  max-width: 50px;
+  border: solid 2px #ff6e3a;
+}
+
+/* line 155, ../sass/home.sass */
+footer.jumbotron h4 {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: normal;
+}

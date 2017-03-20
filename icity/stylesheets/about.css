@@ -1,0 +1,190 @@
+/* line 10, ../sass/about.sass */
+html {
+  font-weight: 200;
+  overflow-x: hidden;
+  font-size: 16px;
+  height: 1500px;
+  background-color: #ececec;
+  position: relative;
+}
+
+/* line 18, ../sass/about.sass */
+* {
+  box-sizing: inherit;
+}
+/* line 20, ../sass/about.sass */
+*:before, *:after {
+  box-sizing: inherit;
+}
+
+/* line 25, ../sass/about.sass */
+nav.navbar {
+  transition: 0.5s;
+  height: 30px;
+}
+
+/* line 29, ../sass/about.sass */
+nav.navbar-top {
+  background-color: transparent;
+}
+
+/* line 32, ../sass/about.sass */
+nav.navbar-top a {
+  color: white;
+  color-transition: 0.5s;
+}
+
+/* line 36, ../sass/about.sass */
+nav.navbar-top a:hover {
+  color: #EE706B;
+}
+
+/* line 40, ../sass/about.sass */
+.panels {
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+}
+
+/* line 45, ../sass/about.sass */
+.panel {
+  color: #fff;
+  text-align: center;
+  transition: font-size 0.7s cubic-bezier(0.67, -0.19, 0.7, -0.11), flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), backgrond 0.2s;
+  font-size: 16px;
+  background-size: cover;
+  background-position: center;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 58, ../sass/about.sass */
+.panel1 {
+  background-image: url(http://i.imgur.com/stucr4B.jpg);
+  width: 20%;
+}
+
+/* line 62, ../sass/about.sass */
+.panel2 {
+  background-image: url(http://i.imgur.com/VLQrkKc.jpg);
+  width: 20%;
+}
+
+/* line 66, ../sass/about.sass */
+.panel3 {
+  background-image: url(http://i.imgur.com/N6GBuJ1.jpg);
+  width: 20%;
+}
+
+/* line 70, ../sass/about.sass */
+.panel4 {
+  background-image: url(http://i.imgur.com/u17regF.jpg);
+  width: 20%;
+}
+
+/* line 74, ../sass/about.sass */
+.panel5 {
+  background-image: url(http://i.imgur.com/YPYKLwK.jpg);
+  width: 20%;
+}
+
+/* Flex children */
+/* line 81, ../sass/about.sass */
+.panel > * {
+  margin: 0;
+  width: 100%;
+  transition: transform 1s;
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 89, ../sass/about.sass */
+.panel > *:first-child {
+  transform: translateY(-100%);
+}
+/* line 92, ../sass/about.sass */
+.panel.open-active > *:first-child, .panel.open-active > *:last-child {
+  transform: translateY(0%);
+}
+/* line 94, ../sass/about.sass */
+.panel > *:last-child {
+  transform: translateY(100%);
+}
+/* line 96, ../sass/about.sass */
+.panel p {
+  text-transform: uppercase;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.75), 0 0 14px rgba(0, 0, 0, 0.75);
+  font-size: 1em;
+  cursor: pointer;
+}
+/* line 101, ../sass/about.sass */
+.panel p:nth-child(2) {
+  font-size: 2em;
+}
+/* line 103, ../sass/about.sass */
+.panel.open {
+  flex: 5;
+  font-size: 48px;
+}
+
+/* line 107, ../sass/about.sass */
+.cta {
+  color: white;
+  text-decoration: none;
+}
+
+/* line 111, ../sass/about.sass */
+section#intro2 .container {
+  padding: 0px 0px;
+}
+
+/* line 114, ../sass/about.sass */
+section#intro2 .col-sm-12 {
+  padding: 0px 0px;
+}
+
+/* line 117, ../sass/about.sass */
+section#intro2 h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* line 121, ../sass/about.sass */
+section#intro2 h4 {
+  text-align: center;
+  margin-top: 10px;
+  padding: 0px 160px;
+  color: #7A93AC;
+  line-height: 30px;
+  font-weight: 30px;
+}
+
+/* line 129, ../sass/about.sass */
+section#intro2 img {
+  width: 300px;
+  margin: 60px 50px;
+}
+
+/* line 133, ../sass/about.sass */
+section#intro2 .col-sm-4 {
+  padding: 0px 0px;
+}
+
+/* line 136, ../sass/about.sass */
+section#intro3 {
+  background-color: #58B9B4;
+  margin-top: 30px;
+  height: 150px;
+  width: 100%;
+}
+
+/* line 143, ../sass/about.sass */
+section#intro4 {
+  background-color: #ececec;
+  height: 300px;
+  width: 100%;
+}

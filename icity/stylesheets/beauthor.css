@@ -1,0 +1,64 @@
+/* line 10, ../sass/beauthor.sass */
+html, body {
+  overflow-x: hidden;
+  font-size: 16px;
+  height: 1000px;
+  background-color: #ececec;
+  position: relative;
+  z-index: -2;
+}
+
+/* line 18, ../sass/beauthor.sass */
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: bold;
+}
+
+/* line 21, ../sass/beauthor.sass */
+header.jumbotron {
+  text-align: center;
+  background-image: url("http://i.imgur.com/eSM8BLc.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 0px;
+}
+
+/* line 28, ../sass/beauthor.sass */
+header.jumbotron .container {
+  color: #EE706B;
+  padding: 130px 0px;
+}
+
+/* line 36, ../sass/beauthor.sass */
+header.jumbotron h4 {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: normal;
+  margin-top: 30px;
+  margin-bottom: -40px;
+}
+
+/* line 42, ../sass/beauthor.sass */
+.divider {
+  color: #5d5d5d;
+  width: 70%;
+  margin: 20px auto;
+  overflow: hidden;
+  text-align: center;
+  line-height: 1.2em;
+  margin-top: 70px;
+}
+
+/* line 51, ../sass/beauthor.sass */
+.divider:before, .divider:after {
+  content: "";
+  vertical-align: top;
+  display: inline-block;
+  width: 50%;
+  height: 0.65em;
+  border-bottom: 3px solid #adadad;
+  margin: 0 2% 0 -55%;
+}
+
+/* line 60, ../sass/beauthor.sass */
+.divider:after {
+  margin: 0 -55% 0 2%;
+}

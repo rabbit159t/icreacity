@@ -1,0 +1,135 @@
+/* line 42, ../sass/team.sass */
+html, body {
+  overflow-x: hidden;
+  font-size: 16px;
+  height: 1000px;
+  background-color: #ececec;
+  position: relative;
+  z-index: -2;
+}
+
+/* line 50, ../sass/team.sass */
+p, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: bold;
+}
+
+/* line 55, ../sass/team.sass */
+nav.navbar {
+  transition: 0.5s;
+}
+
+/* line 58, ../sass/team.sass */
+nav.navbar-top {
+  background-color: #58B9B4;
+  opacity: 0.6;
+}
+
+/* line 62, ../sass/team.sass */
+nav.navbar.navbar-default.navbar-fixed-top.navbar-top a {
+  color: #595A5A;
+  transition: 0.5s;
+}
+/* line 65, ../sass/team.sass */
+nav.navbar.navbar-default.navbar-fixed-top.navbar-top a:hover {
+  color: #ff6e3a;
+}
+
+/* line 70, ../sass/team.sass */
+.white_back {
+  background-color: white;
+  position: absolute;
+  width: 1150px;
+  height: 1400px;
+  display: block;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.6;
+  z-index: -1;
+}
+
+/* line 75, ../sass/team.sass */
+.caption1 {
+  text-align: center;
+  color: #10345F;
+  font-size: 40px;
+  font-weight: bold;
+  padding-top: 100px;
+}
+
+/* line 79, ../sass/team.sass */
+.intro1 {
+  color: #595A5A;
+  font-size: 18px;
+  margin-top: 20px;
+  padding: 0px 160px;
+}
+
+/* line 85, ../sass/team.sass */
+.hr1 {
+  border: solid 0.2px #EE706B;
+  width: 650px;
+  opacity: 0.4;
+  text-align: center;
+  padding: 0px -100px;
+}
+
+/* line 91, ../sass/team.sass */
+.caption2 {
+  text-align: center;
+  color: #10345F;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* line 95, ../sass/team.sass */
+.intro2 {
+  color: #595A5A;
+  font-size: 18px;
+  margin-top: 20px;
+  padding: 0px 160px;
+}
+
+/* line 101, ../sass/team.sass */
+.hr2 {
+  border: solid 0.2px #EE706B;
+  width: 650px;
+  opacity: 0.4;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* line 107, ../sass/team.sass */
+.caption3 {
+  text-align: center;
+  color: #10345F;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* line 111, ../sass/team.sass */
+.people {
+  width: 40%;
+  margin-top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  position: relative;
+}
+
+/* line 116, ../sass/team.sass */
+.hr3 {
+  border: solid 0.2px #EE706B;
+  width: 650px;
+  opacity: 0.4;
+  text-align: center;
+  margin-top: 100px;
+}
+
+/* line 121, ../sass/team.sass */
+footer#part4 {
+  background-color: #F8CC46;
+  padding: 80px 0px;
+  margin-top: 30px;
+}
